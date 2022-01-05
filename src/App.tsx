@@ -35,7 +35,7 @@ function App() {
       .then((res) => setState((s) => ({ ...s, response: res.express })))
       // tslint:disable-next-line:no-console
       .catch((err) => console.log(err));
-  }, []);
+  }, [callApi]);
 
   return (
     <div className="App">
